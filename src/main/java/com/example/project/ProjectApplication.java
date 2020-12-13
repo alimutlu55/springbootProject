@@ -36,22 +36,22 @@ public class ProjectApplication {
 	@RequestMapping("/getProduct")
 	public ProductWrapper getProduct(@RequestBody Product product) {
 		Product p1 = new Product();
-		p1.setProductId(5);
+		p1.setProductId(1);
 		p1.setProductModel("HP");
 		p1.setProductName("Computer");
 		p1.setProductCategory("Technology");
 
 		Product p2 = new Product();
-		p1.setProductId(8);
-		p1.setProductModel("Asus");
-		p1.setProductName("Computer");
-		p1.setProductCategory("Technology");
+		p2.setProductId(2);
+		p2.setProductModel("Asus");
+		p2.setProductName("Computer");
+		p2.setProductCategory("Technology");
 
 		Product p3 = new Product();
-		p1.setProductId(10);
-		p1.setProductModel("Mac");
-		p1.setProductName("Computer");
-		p1.setProductCategory("Technology");
+		p3.setProductId(3);
+		p3.setProductModel("Mac");
+		p3.setProductName("Computer");
+		p3.setProductCategory("Technology");
 
 		ArrayList<Product> productList = new ArrayList<>();
 		productList.add(p1);
