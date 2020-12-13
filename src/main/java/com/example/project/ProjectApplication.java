@@ -65,7 +65,7 @@ public class ProjectApplication {
 
 	@RequestMapping("/getDunyanınEnGuzelKadını")
 	public String getEnSevdigimService() {
-		return "Benim Aşkımmmmmmmm. Seni seviyorum <3";
+		return "Dünyanın en güzel kadını benim aşkımdır.Seni seviyorum <3";
 	}
 
 
