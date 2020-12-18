@@ -1,11 +1,29 @@
-package com.example.project.model;
+package com.example.project.models;
+
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
 
 
+@Document
 public class Product {
+
+    @Id
     private int productId;
     private String productName;
     private String productCategory;
     private String productModel;
+
+
+    public Product(int productId, String productName, String productCategory, String productModel) {
+        this.productId = productId;
+        this.productName = productName;
+        this.productCategory = productCategory;
+        this.productModel = productModel;
+    }
+
+    public Product() {
+
+    }
 
     public int getProductId() {
         return productId;
@@ -37,5 +55,15 @@ public class Product {
 
     public void setProductModel(String productModel) {
         this.productModel = productModel;
+    }
+
+    @Override
+    public String toString() {
+        return "Product{" +
+                "productId=" + productId +
+                ", productName='" + productName + '\'' +
+                ", productCategory='" + productCategory + '\'' +
+                ", productModel='" + productModel + '\'' +
+                '}';
     }
 }
