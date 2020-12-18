@@ -29,8 +29,8 @@ public class ProductController {
     }
 
     @PostMapping("/getById")
-    public Product getProductById (@PathVariable int productId) {
-        return iProductService.getProductById(productId);
+    public Product getProductById (@PathVariable int id) {
+        return iProductService.getProductById(id);
     }
 
 }

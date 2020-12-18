@@ -17,6 +17,7 @@ public class ProductManager implements IProductService {
         this.iProductDal = iProductDal;
     }
 
+
     @Override
     public List<Product> getAllProducts() {
         return this.iProductDal.getAllProducts();
