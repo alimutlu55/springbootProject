@@ -32,9 +32,15 @@ public class ProductDal implements IProductDal {
     }
 
     @Override
-    public Product addProduct(Product product) {
+    public void addProduct(Product product) {
         mongoTemplate.save(product);
-        return product;
+    }
+
+    @Override
+    public void removeById(int id) {
+        Query query = new Query();
+        query.addCriteria(Criteria.where("id").is(id));
+        mongoTemplate.remove(query, Product.class);
     }
 
 }

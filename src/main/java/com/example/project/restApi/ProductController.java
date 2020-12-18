@@ -33,4 +33,7 @@ public class ProductController {
         return iProductService.getProductById(id);
     }
 
+    @PostMapping("/removeById/{id}")
+    public void removeProduct (@PathVariable int id) { iProductService.removeById(id);}
+
 }

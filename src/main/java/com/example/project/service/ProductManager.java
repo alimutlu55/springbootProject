@@ -32,4 +32,9 @@ public class ProductManager implements IProductService {
     public void addProduct(Product product) {
          this.iProductDal.addProduct(product);
     }
+
+    @Override
+    public void removeById(int id) {
+        this.iProductDal.removeById(id);
+    }
 }
