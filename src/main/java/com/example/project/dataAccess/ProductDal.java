@@ -37,9 +37,9 @@ public class ProductDal implements IProductDal {
     }
 
     @Override
-    public void removeById(int id) {
+    public void removeById(int productId) {
         Query query = new Query();
-        query.addCriteria(Criteria.where("id").is(id));
+        query.addCriteria(Criteria.where("productId").is(productId));
         mongoTemplate.remove(query, Product.class);
     }
 
