@@ -28,7 +28,7 @@ public class ProductController {
          iProductService.addProduct(product);
     }
 
-    @PostMapping("/getById")
+    @GetMapping("/getById/{id}")
     public Product getProductById (@PathVariable int id) {
         return iProductService.getProductById(id);
     }
