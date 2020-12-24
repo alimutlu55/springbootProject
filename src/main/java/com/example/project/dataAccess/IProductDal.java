@@ -13,4 +13,6 @@ public interface IProductDal {
     void addProduct(Product product);
 
     void removeById(int productId);
+
+    void updateProduct(Product product);
 }

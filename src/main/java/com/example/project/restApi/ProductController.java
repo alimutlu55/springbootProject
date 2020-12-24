@@ -36,4 +36,7 @@ public class ProductController {
     @PostMapping("/removeById/{id}")
     public void removeProduct (@PathVariable int id) { iProductService.removeById(id);}
 
+    @PostMapping("/updateProduct")
+    public void removeProduct (@RequestBody Product product) { iProductService.updateProduct(product);}
+
 }

@@ -33,7 +33,7 @@ public class ProductDal implements IProductDal {
 
     @Override
     public void addProduct(Product product) {
-        mongoTemplate.save(product);
+        mongoTemplate.insert(product);
     }
 
     @Override
@@ -41,6 +41,11 @@ public class ProductDal implements IProductDal {
         Query query = new Query();
         query.addCriteria(Criteria.where("productId").is(productId));
         mongoTemplate.remove(query, Product.class);
+    }
+
+    @Override
+    public void updateProduct(Product product) {
+        mongoTemplate.save(product);
     }
 
 }

@@ -37,4 +37,9 @@ public class ProductManager implements IProductService {
     public void removeById(int id) {
         this.iProductDal.removeById(id);
     }
+
+    @Override
+    public void updateProduct(Product product) {
+        this.iProductDal.updateProduct(product);
+    }
 }
