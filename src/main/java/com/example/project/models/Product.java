@@ -15,11 +15,11 @@ public class Product {
     private String productCategory;
     private String productModel;
     private int productCategoryId;
-    private Currency productPrice;
+    private double productPrice;
     private String productImgUrl;
     private String productDescription;
 
-    public Product(int productId, String productName, String productCategory, String productModel, int productCategoryId, Currency productPrice, String productImgUrl, String productDescription) {
+    public Product(int productId, String productName, String productCategory, String productModel, int productCategoryId, double productPrice, String productImgUrl, String productDescription) {
         this.productId = productId;
         this.productName = productName;
         this.productCategory = productCategory;
@@ -42,11 +42,11 @@ public class Product {
         this.productCategoryId = productCategoryId;
     }
 
-    public Currency getProductPrice() {
+    public Double getProductPrice() {
         return productPrice;
     }
 
-    public void setProductPrice(Currency productPrice) {
+    public void setProductPrice(Double productPrice) {
         this.productPrice = productPrice;
     }
 
