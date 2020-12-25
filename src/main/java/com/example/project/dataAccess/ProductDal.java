@@ -27,7 +27,7 @@ public class ProductDal implements IProductDal {
     @Override
     public List<Product> getByCategoryId(int productCategoryId) {
         Query query = new Query();
-        query.addCriteria(Criteria.where("productId").is(productCategoryId));
+        query.addCriteria(Criteria.where("productCategoryId").is(productCategoryId));
         return mongoTemplate.find(query,Product.class);
     }
 
