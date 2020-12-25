@@ -28,12 +28,12 @@ public class ProductController {
          iProductService.addProduct(product);
     }
 
-    @GetMapping("/products/getById/{id}")
+    @GetMapping("/products/getById/{productId}")
     public Product getProductById (@PathVariable int productId) {
         return iProductService.getProductById(productId);
     }
 
-    @GetMapping("/products/getByCategoryId/{id}")
+    @GetMapping("/products/getByCategoryId/{productCategoryId}")
     public List<Product>  getByCategoryId (@PathVariable int productCategoryId) {
         return iProductService.getByCategoryId(productCategoryId);
     }
