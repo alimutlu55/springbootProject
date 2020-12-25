@@ -29,8 +29,13 @@ public class ProductController {
     }
 
     @GetMapping("/products/getById/{id}")
-    public Product getProductById (@PathVariable int id) {
-        return iProductService.getProductById(id);
+    public Product getProductById (@PathVariable int productId) {
+        return iProductService.getProductById(productId);
+    }
+
+    @GetMapping("/products/getByCategoryId/{id}")
+    public List<Product>  getByCategoryId (@PathVariable int productCategoryId) {
+        return iProductService.getByCategoryId(productCategoryId);
     }
 
     @PostMapping("/removeById/{id}")

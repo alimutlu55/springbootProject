@@ -8,6 +8,8 @@ public interface IProductDal {
 
     List<Product> getAllProducts();
 
+    List<Product> getByCategoryId(int productCategoryId);
+
     Product getProductById(int productId);
 
     void addProduct(Product product);

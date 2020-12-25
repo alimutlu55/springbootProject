@@ -9,6 +9,8 @@ public interface IProductService {
 
     Product getProductById(int productId);
 
+    List<Product> getByCategoryId(int productCategoryId);
+
     void addProduct(Product product);
 
     void removeById(int id);

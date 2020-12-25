@@ -29,6 +29,11 @@ public class ProductManager implements IProductService {
     }
 
     @Override
+    public List<Product> getByCategoryId(int productCategoryId) {
+        return this.iProductDal.getByCategoryId(productCategoryId);
+    }
+
+    @Override
     public void addProduct(Product product) {
          this.iProductDal.addProduct(product);
     }
