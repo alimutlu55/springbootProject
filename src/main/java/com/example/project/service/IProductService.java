@@ -11,7 +11,7 @@ public interface IProductService {
 
     List<Product> getByCategoryId(int productCategoryId);
 
-    void addProduct(Product product);
+    Product addProduct(Product product);
 
     void removeById(int id);
 

@@ -12,7 +12,7 @@ public interface IProductDal {
 
     Product getProductById(int productId);
 
-    void addProduct(Product product);
+    Product addProduct(Product product);
 
     void removeById(int productId);
 

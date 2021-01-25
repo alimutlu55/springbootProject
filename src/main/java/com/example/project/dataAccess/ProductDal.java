@@ -39,8 +39,9 @@ public class ProductDal implements IProductDal {
     }
 
     @Override
-    public void addProduct(Product product) {
+    public Product addProduct(Product product) {
         mongoTemplate.insert(product);
+        return product;
     }
 
     @Override

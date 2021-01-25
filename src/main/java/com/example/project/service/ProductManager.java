@@ -34,8 +34,9 @@ public class ProductManager implements IProductService {
     }
 
     @Override
-    public void addProduct(Product product) {
+    public Product addProduct(Product product) {
          this.iProductDal.addProduct(product);
+         return product;
     }
 
     @Override

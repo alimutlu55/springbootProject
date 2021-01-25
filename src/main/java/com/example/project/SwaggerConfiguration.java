@@ -20,6 +20,5 @@ public class SwaggerConfiguration {
                 .paths(PathSelectors.any())
                 .build()
                 .pathMapping("/");
-
     }
 }

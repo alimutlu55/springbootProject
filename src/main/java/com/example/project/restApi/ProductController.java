@@ -24,8 +24,9 @@ public class ProductController {
     }
 
     @PostMapping("/addProduct")
-    public void addProduct (@RequestBody Product product) {
+    public Product addProduct (@RequestBody Product product) {
          iProductService.addProduct(product);
+         return product;
     }
 
     @GetMapping("/products/getById/{productId}")
